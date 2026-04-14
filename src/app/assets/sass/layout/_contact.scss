@@ -358,6 +358,10 @@ START: Contact CSS
 		z-index: 2;
 		img {
 			width: 100%;
+			max-width: 70%;
+			display: block;
+			margin-inline-start: 0;
+			margin-inline-end: auto;
 			opacity: 0.4;
 		}
 		@media #{$md, $sm, $xs} {
@@ -395,16 +399,8 @@ START: Contact CSS
 			height: 12px;
 		}
 		&.loc-1 {
-			top: 38%;
-			inset-inline-start: 21%;
-		}
-		&.loc-2 {
-			top: 36%;
+			top: 35%;
 			inset-inline-start: 46%;
-		}
-		&.loc-3 {
-			top: 73%;
-			inset-inline-start: 30%;
 		}
 		&::after {
 			content: "";

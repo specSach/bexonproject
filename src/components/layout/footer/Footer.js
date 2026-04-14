@@ -19,14 +19,6 @@ const Footer = () => {
 										satisfaction & loyalty of our expansion.
 									</p>
 								</div>
-								<div className="award-logo-area">
-									<div className="award-logo">
-										<img src="/images/footer/award-logo-1.webp" alt="" />
-									</div>
-									<div className="award-logo">
-										<img src="/images/footer/award-logo-2.webp" alt="" />
-									</div>
-								</div>
 							</div>
 						</div>
 						<div className="col-xl-3 col-lg-4 col-md-6">
@@ -57,7 +49,7 @@ const Footer = () => {
 								</ul>
 							</div>
 						</div>
-						<div className="col-xl-2 col-lg-4 col-md-6">
+						<div className="col-xl-3 col-lg-4 col-md-6">
 							<div
 								className="footer-widget widget-nav-menu wow fadeInUp"
 								data-wow-delay=".5s"
@@ -85,33 +77,6 @@ const Footer = () => {
 										<Link href="#">Feedback</Link>
 									</li>
 								</ul>
-							</div>
-						</div>
-						<div className="col-xl-4 col-lg-5 col-md-6">
-							<div
-								className="footer-widget widget-subscribe wow fadeInUp"
-								data-wow-delay=".7s"
-							>
-								<h3 className="title">Subscribe to Our Newsletter.</h3>
-								<div className="subscribe-form">
-									<form action="#">
-										<input
-											type="email"
-											name="email"
-											placeholder="Enter email"
-										/>
-										<button type="submit">
-											<i className="tji-plane"></i>
-										</button>
-										<label htmlFor="agree">
-											<input id="agree" type="checkbox" />
-											Agree to our{" "}
-											<Link href="/terms-and-conditions">
-												Terms & Condition?
-											</Link>
-										</label>
-									</form>
-								</div>
 							</div>
 						</div>
 					</div>
