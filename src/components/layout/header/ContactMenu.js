@@ -39,22 +39,6 @@ const ContactMenu = ({ isContactOpen, setIsContactOpen }) => {
 								leaders.
 							</p>
 						</div>
-						<div className="hamburger-search-area">
-							<h5 className="hamburger-title">Search Now!</h5>
-							<div className="hamburger_search">
-								<form method="get" action="/">
-									<button type="submit">
-										<i className="tji-search"></i>
-									</button>
-									<input
-										type="search"
-										autoComplete="off"
-										name="s"
-										placeholder="Search here..."
-									/>
-								</form>
-							</div>
-						</div>
 						<div className="hamburger-infos">
 							<h5 className="hamburger-title">Contact Info</h5>
 							<div className="contact-info">
