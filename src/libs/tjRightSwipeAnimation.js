@@ -16,6 +16,7 @@ const tjRightSwipeAnimation = commonAnimContainerRef => {
 				rotateY: 0,
 				opacity: 1,
 				delay: 0.3,
+				stagger: 0.12,
 				ease: "power3.out",
 				scrollTrigger: {
 					trigger: wrap,
