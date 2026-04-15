@@ -1,4 +1,5 @@
 import { Mona_Sans } from "next/font/google";
+import TopPageBar from "@/components/layout/header/TopPageBar";
 import "react-range-slider-input/dist/style.css";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en" data-scroll-behavior="smooth" dir="ltr">
 			<body className={`${bodyFont.variable} ${headingFont.variable}`}>
+				<TopPageBar />
 				{children}
 			</body>
 		</html>

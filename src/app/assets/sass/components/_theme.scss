@@ -446,9 +446,9 @@ img {
 	}
 }
 .space-for-header {
-	padding-top: 105px;
+	padding-top: calc(105px + var(--top-page-bar-offset, 0px));
 	@media #{$md,$sm,$xs} {
-		padding-top: 95px;
+		padding-top: calc(95px + var(--top-page-bar-offset, 0px));
 	}
 }
 .top-space-15 {
