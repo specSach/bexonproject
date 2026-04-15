@@ -14,11 +14,11 @@ const Contact2 = () => {
 								<img src="/images/bg/map.svg" alt="Image" />
 								<div className="location-indicator loc-1">
 									<div className="location-tooltip">
-										<span>Head office:</span>
-										<p>993 Renner Burg, West Rond, MT 94251-030, USA.</p>
-										<Link href="tel:10095447818">P: +1 (009) 544-7818</Link>
+										<span>Головной офис:</span>
+										<p>993 Renner Burg, West Rond, MT 94251-030, США.</p>
+										<Link href="tel:10095447818">Т: +1 (009) 544-7818</Link>
 										<Link href="mailto:support@bexon.com">
-											M: support@bexon.com
+											E: support@bexon.com
 										</Link>
 									</div>
 								</div>
@@ -32,10 +32,10 @@ const Contact2 = () => {
 						>
 							<div className="sec-heading">
 								<span className="sub-title text-white">
-									<i className="tji-box"></i>Get in Touch
+									<i className="tji-box"></i>Свяжитесь с нами
 								</span>
 								<h2 className="sec-title title-anim">
-									Drop Us a <span>Line.</span>
+									Отправьте нам <span>сообщение.</span>
 								</h2>
 							</div>
 							<form id="contact-form-2">
@@ -45,7 +45,7 @@ const Contact2 = () => {
 											<input
 												type="text"
 												name="cfName2"
-												placeholder="Full Name *"
+												placeholder="Ваше имя *"
 											/>
 										</div>
 									</div>
@@ -54,7 +54,7 @@ const Contact2 = () => {
 											<input
 												type="email"
 												name="cfEmail2"
-												placeholder="Email Address *"
+												placeholder="Email *"
 											/>
 										</div>
 									</div>
@@ -63,7 +63,7 @@ const Contact2 = () => {
 											<input
 												type="tel"
 												name="cfPhone2"
-												placeholder="Phone number *"
+												placeholder="Телефон *"
 											/>
 										</div>
 									</div>
@@ -74,24 +74,24 @@ const Contact2 = () => {
 													<ReactNiceSelect
 														selectedIndex={0}
 														options={[
-															{ value: "0", optionName: "Chose a option" },
-															{ value: "1", optionName: "Business Strategy" },
-															{ value: "2", optionName: "Customer Experience" },
+															{ value: "0", optionName: "Выберите услугу" },
+															{ value: "1", optionName: "Бизнес-стратегия" },
+															{ value: "2", optionName: "Клиентский опыт" },
 															{
 																value: "3",
-																optionName: "Sustainability and ESG",
+																optionName: "Устойчивое развитие и ESG",
 															},
 															{
 																value: "4",
-																optionName: "Training and Development",
+																optionName: "Обучение и развитие",
 															},
 															{
 																value: "5",
-																optionName: "IT Support & Maintenance",
+																optionName: "ИТ-поддержка и обслуживание",
 															},
 															{
 																value: "6",
-																optionName: "Marketing Strategy",
+																optionName: "Маркетинговая стратегия",
 															},
 														]}
 													/>
@@ -104,12 +104,12 @@ const Contact2 = () => {
 											<textarea
 												name="cfMessage2"
 												id="message"
-												placeholder="Type message *"
+												placeholder="Введите сообщение *"
 											></textarea>
 										</div>
 									</div>
 									<div className="submit-btn">
-										<ButtonPrimary text={"Send Message"} type={"submit"} />
+										<ButtonPrimary text={"Отправить"} type={"submit"} />
 									</div>
 								</div>
 							</form>

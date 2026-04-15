@@ -8,10 +8,10 @@ const Hero = () => {
 				<div className="banner-left-box">
 					<div className="banner-content">
 						<span className="sub-title wow fadeInDown" data-wow-delay=".2s">
-							<i className="tji-excellence"></i> Recognized for Excellence
+							<i className="tji-excellence"></i> Признаны за высокий уровень качества
 						</span>
 						<h1 className="banner-title title-anim">
-							Driving Excellence Through Evolution and <span>Trust.</span>
+							Развиваем бизнес через эволюцию и <span>доверие.</span>
 						</h1>
 						<div className="banner-desc-area wow fadeInUp" data-wow-delay=".7s">
 							<Link className="banner-link" href="/about">
@@ -20,8 +20,8 @@ const Hero = () => {
 								</span>
 							</Link>
 							<div className="banner-desc">
-								Represents growth, expansion, and modern business solution
-								present growth, expansion.
+								Олицетворяет рост, масштабирование и современные решения для
+								бизнеса.
 							</div>
 						</div>
 					</div>
@@ -81,7 +81,7 @@ const Hero = () => {
 								30K
 							</div>
 							<h6 className="customers-text wow fadeInUp" data-wow-delay=".5s">
-								Happy customer we have world-wide.
+								довольных клиентов по всему миру.
 							</h6>
 						</div>
 					</div>
@@ -92,7 +92,7 @@ const Hero = () => {
 					<span>
 						<i className="tji-arrow-down-long"></i>
 					</span>
-					Scroll Down
+					Прокрутить вниз
 				</button>
 			</div>
 		</section>

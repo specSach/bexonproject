@@ -23,11 +23,11 @@ const ServiceCard1 = ({ service, idx, lastItem }) => {
 					<Link href={`/services/${id}`}>{title}</Link>
 				</h4>
 				<p className="desc">
-					Through a combination of data-driven insights and innovative
-					approaches, we work closely with you to develop customized.
+					Сочетая аналитику данных и инновационный подход, мы тесно работаем
+					с вами и создаем решения под ваши задачи.
 				</p>
 				<ButtonPrimary
-					text={"Learn More"}
+					text={"Подробнее"}
 					url={`/services/${id}`}
 					isTextBtn={true}
 				/>

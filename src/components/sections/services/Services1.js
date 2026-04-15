@@ -11,10 +11,10 @@ const Services1 = () => {
 								className="sub-title text-white wow fadeInUp"
 								data-wow-delay=".3s"
 							>
-								<i className="tji-box"></i>Our Solutions
+								<i className="tji-box"></i>Наши решения
 							</span>
 							<h2 className="sec-title text-white title-anim">
-								Solutions to Transform Your <span>Business.</span>
+								Решения для развития вашего <span>бизнеса.</span>
 							</h2>
 						</div>
 					</div>

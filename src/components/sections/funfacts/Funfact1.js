@@ -9,7 +9,7 @@ const Funfact1 = () => {
 							<div className="countup-item">
 								<FunfactSingle currentValue={93} symbol={"%"} />
 
-								<span className="count-text">Projects Completed.</span>
+								<span className="count-text">проектов завершено.</span>
 								<span
 									className="count-separator"
 									style={{
@@ -19,7 +19,7 @@ const Funfact1 = () => {
 							</div>
 							<div className="countup-item">
 								<FunfactSingle currentValue={20} symbol={"M"} />
-								<span className="count-text">Reach Worldwide</span>
+								<span className="count-text">охват по всему миру</span>
 								<span
 									className="count-separator"
 									style={{
@@ -29,7 +29,7 @@ const Funfact1 = () => {
 							</div>
 							<div className="countup-item">
 								<FunfactSingle currentValue={8.5} symbol={"X"} />
-								<span className="count-text">Faster Growth</span>
+								<span className="count-text">ускорение роста</span>
 								<span
 									className="count-separator"
 									style={{
@@ -39,7 +39,7 @@ const Funfact1 = () => {
 							</div>
 							<div className="countup-item">
 								<FunfactSingle currentValue={100} symbol={"+"} />
-								<span className="count-text">Awards Archived</span>
+								<span className="count-text">отраслевых наград</span>
 							</div>
 						</div>
 					</div>

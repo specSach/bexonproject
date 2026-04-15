@@ -15,8 +15,8 @@ const Footer = () => {
 								</div>
 								<div className="footer-text">
 									<p>
-										Developing personalze our customer journeys to increase
-										satisfaction & loyalty of our expansion.
+										Развиваем и персонализируем клиентский путь, повышая
+										удовлетворенность и лояльность.
 									</p>
 								</div>
 							</div>
@@ -26,25 +26,25 @@ const Footer = () => {
 								className="footer-widget widget-nav-menu wow fadeInUp"
 								data-wow-delay=".3s"
 							>
-								<h5 className="title">Services</h5>
+								<h5 className="title">Услуги</h5>
 								<ul>
 									<li>
-										<Link href="/services/1">Customer Experience</Link>
+										<Link href="/services/1">Клиентский опыт</Link>
 									</li>
 									<li>
-										<Link href="/services/2">Training Programs</Link>
+										<Link href="/services/2">Программы обучения</Link>
 									</li>
 									<li>
-										<Link href="/services/3">Business Strategy</Link>
+										<Link href="/services/3">Бизнес-стратегия</Link>
 									</li>
 									<li>
-										<Link href="/services/4">Training Program</Link>
+										<Link href="/services/4">Развитие персонала</Link>
 									</li>
 									<li>
-										<Link href="/services/5">ESG Consulting</Link>
+										<Link href="/services/5">ESG-консалтинг</Link>
 									</li>
 									<li>
-										<Link href="/services/6">Development Hub</Link>
+										<Link href="/services/6">Маркетинговая стратегия</Link>
 									</li>
 								</ul>
 							</div>
@@ -54,27 +54,27 @@ const Footer = () => {
 								className="footer-widget widget-nav-menu wow fadeInUp"
 								data-wow-delay=".5s"
 							>
-								<h5 className="title">Resources</h5>
+								<h5 className="title">Разделы</h5>
 								<ul>
 									<li>
-										<Link href="/contact">Contact us</Link>
+										<Link href="/contact">Контакты</Link>
 									</li>
 									<li>
-										<Link href="/team">Team Member</Link>
+										<Link href="/team">Команда</Link>
 									</li>
 									<li>
-										<Link href="#">Recognitions</Link>
+										<Link href="#">Достижения</Link>
 									</li>
 									<li>
 										<Link href="/careers">
-											Careers <span className="badge">New</span>
+											Карьера <span className="badge">Новое</span>
 										</Link>
 									</li>
 									<li>
-										<Link href="/blogs">News</Link>
+										<Link href="/blogs">Новости</Link>
 									</li>
 									<li>
-										<Link href="#">Feedback</Link>
+										<Link href="#">Отзывы</Link>
 									</li>
 								</ul>
 							</div>
@@ -140,7 +140,7 @@ const Footer = () => {
 										>
 											Bexon
 										</Link>{" "}
-										All right reserved
+										Все права защищены
 									</p>
 								</div>
 							</div>

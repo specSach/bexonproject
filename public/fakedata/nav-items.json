@@ -1,179 +1,179 @@
 [
 	{
 		"id": 1,
-		"name": "Home",
+		"name": "Главная",
 		"path": "/",
 		"submenu": [
 			{
 				"id": 1,
-				"name": "Home - 01",
+				"name": "Главная - 01",
 				"img": "/images/header/demo/home-1.webp",
 				"path": "/"
 			},
 			{
 				"id": 2,
-				"name": "Home - 02",
+				"name": "Главная - 02",
 				"img": "/images/header/demo/home-2.webp",
 				"path": "/home-02"
 			},
 			{
 				"id": 3,
-				"name": "Home - 03",
+				"name": "Главная - 03",
 				"img": "/images/header/demo/home-3.webp",
 				"path": "/home-03"
 			},
 			{
 				"id": 4,
-				"name": "Home - 04",
+				"name": "Главная - 04",
 				"img": "/images/header/demo/home-4.webp",
 				"path": "/home-04"
 			},
 			{
 				"id": 5,
-				"name": "Home - 05",
+				"name": "Главная - 05",
 				"img": "/images/header/demo/home-5.webp",
 				"path": "/home-05"
 			},
 			{
 				"id": 6,
-				"name": "Home - 06",
+				"name": "Главная - 06",
 				"img": "/images/header/demo/home-6.webp",
 				"path": "/home-06"
 			},
 			{
 				"id": 7,
-				"name": "Home - 07",
+				"name": "Главная - 07",
 				"img": "/images/header/demo/home-7.webp",
 				"path": "/home-07",
-				"badge": "New"
+				"badge": "Новое"
 			},
 			{
 				"id": 8,
-				"name": "Home - 08",
+				"name": "Главная - 08",
 				"img": "/images/header/demo/home-8.webp",
 				"path": "/home-08",
-				"badge": "New"
+				"badge": "Новое"
 			},
 			{
 				"id": 9,
-				"name": "Home - 09",
+				"name": "Главная - 09",
 				"img": "/images/header/demo/home-9.webp",
 				"path": "/home-09",
-				"badge": "New"
+				"badge": "Новое"
 			},
 			{
 				"id": 10,
-				"name": "Home - 10",
+				"name": "Главная - 10",
 				"img": "/images/header/demo/home-10.webp",
 				"path": "/home-10",
-				"badge": "New"
+				"badge": "Новое"
 			}
 		]
 	},
 	{
 		"id": 2,
-		"name": "Pages",
+		"name": "Страницы",
 		"path": "/about",
 		"submenu": [
 			{
 				"id": 1,
-				"name": "Main Pages",
+				"name": "Основные страницы",
 				"path": "#",
 				"items": [
-					{ "id": 1, "name": "About us", "path": "/about", "badge": null },
+					{ "id": 1, "name": "О нас", "path": "/about", "badge": null },
 					{
 						"id": 2,
-						"name": "Our history",
+						"name": "Наша история",
 						"path": "/history",
-						"badge": "HOT"
+						"badge": "Хит"
 					},
-					{ "id": 3, "name": "Team", "path": "/team", "badge": null },
+					{ "id": 3, "name": "Команда", "path": "/team", "badge": null },
 					{
 						"id": 4,
-						"name": "Team details",
+						"name": "О сотруднике",
 						"path": "/team/1",
 						"badge": null
 					},
 					{
 						"id": 5,
-						"name": "Careers",
+						"name": "Карьера",
 						"path": "/careers",
-						"badge": "New"
+						"badge": "Новое"
 					},
 					{
 						"id": 6,
-						"name": "Careers details",
+						"name": "Вакансия",
 						"path": "/careers/1",
 						"badge": null
 					},
 					{
 						"id": 7,
-						"name": "Pricing Plan",
+						"name": "Тарифы",
 						"path": "/pricing-plan",
 						"badge": null
 					},
-					{ "id": 8, "name": "Feedbacks", "path": "#", "badge": null },
-					{ "id": 9, "name": "Faq", "path": "/faq", "badge": null },
-					{ "id": 10, "name": "Conatct", "path": "/contact", "badge": null }
+					{ "id": 8, "name": "Отзывы", "path": "#", "badge": null },
+					{ "id": 9, "name": "FAQ", "path": "/faq", "badge": null },
+					{ "id": 10, "name": "Контакты", "path": "/contact", "badge": null }
 				]
 			},
 			{
 				"id": 2,
-				"name": "Other pages",
+				"name": "Другие страницы",
 				"path": "#",
 				"items": [
-					{ "id": 1, "name": "Services", "path": "/services", "badge": null },
+					{ "id": 1, "name": "Услуги", "path": "/services", "badge": null },
 					{
 						"id": 2,
-						"name": "Service details",
+						"name": "Детали услуги",
 						"path": "/services/1",
 						"badge": null
 					},
 					{
 						"id": 3,
-						"name": "Portfolios",
+						"name": "Портфолио",
 						"path": "/portfolios",
 						"badge": null
 					},
 					{
 						"id": 4,
-						"name": "Portfolio details",
+						"name": "Детали проекта",
 						"path": "/portfolios/1",
 						"badge": null
 					},
 					{
 						"id": 5,
-						"name": "Error 404",
+						"name": "Ошибка 404",
 						"path": "/error",
 						"badge": null
 					},
 					{
 						"id": 6,
-						"name": "Blog grid",
+						"name": "Блог: сетка",
 						"path": "/blog-grid",
-						"badge": "NEW"
+						"badge": "Новое"
 					},
 					{
 						"id": 7,
-						"name": "Blog standard",
+						"name": "Блог: стандарт",
 						"path": "/blogs",
 						"badge": null
 					},
 					{
 						"id": 8,
-						"name": "Blog sidebar",
+						"name": "Блог: сайдбар",
 						"path": "/blog-sidebar",
 						"badge": null
 					},
 					{
 						"id": 9,
-						"name": "Blog details",
+						"name": "Блог: детали",
 						"path": "/blogs/1",
 						"badge": null
 					},
 					{
 						"id": 10,
-						"name": "Term & conditions",
+						"name": "Условия и положения",
 						"path": "/terms-and-conditions",
 						"badge": null
 					}
@@ -181,91 +181,91 @@
 			},
 			{
 				"id": 3,
-				"name": "Shop pages",
+				"name": "Страницы магазина",
 				"path": "/shop",
 				"items": [
-					{ "id": 1, "name": "Shop", "path": "/shop", "badge": "HOT" },
+					{ "id": 1, "name": "Магазин", "path": "/shop", "badge": "Хит" },
 					{
 						"id": 2,
-						"name": "Shop details",
+						"name": "Детали товара",
 						"path": "/shop/1",
 						"badge": null
 					},
-					{ "id": 3, "name": "Cart", "path": "/cart", "badge": null },
+					{ "id": 3, "name": "Корзина", "path": "/cart", "badge": null },
 					{
 						"id": 4,
-						"name": "Checkout",
+						"name": "Оформление заказа",
 						"path": "/checkout",
 						"badge": null
 					},
 					{
 						"id": 5,
-						"name": "My account",
+						"name": "Мой аккаунт",
 						"path": "#",
 						"badge": null
 					},
 					{
 						"id": 6,
-						"name": "Wishlist",
+						"name": "Избранное",
 						"path": "/wishlist",
-						"badge": "NEW"
+						"badge": "Новое"
 					},
 					{
 						"id": 7,
-						"name": "Login",
+						"name": "Вход",
 						"path": "/login",
 						"badge": null
 					},
 					{
 						"id": 8,
-						"name": "Registration",
+						"name": "Регистрация",
 						"path": "/password",
 						"badge": null
 					},
-					{ "id": 9, "name": "Order confirm", "path": "#", "badge": null },
-					{ "id": 10, "name": "Coming soon", "path": "#", "badge": null }
+					{ "id": 9, "name": "Подтверждение заказа", "path": "#", "badge": null },
+					{ "id": 10, "name": "Скоро", "path": "#", "badge": null }
 				]
 			}
 		]
 	},
 	{
 		"id": 3,
-		"name": "Services",
+		"name": "Услуги",
 		"path": "/services",
 		"submenu": [
 			{
 				"id": 1,
-				"name": "Business Strategy Development",
+				"name": "Разработка бизнес-стратегии",
 				"icon": "tji-service-1",
 				"path": "/services/1"
 			},
 			{
 				"id": 2,
-				"name": "Customer Experience Solutions",
+				"name": "Решения для клиентского опыта",
 				"icon": "tji-service-2",
 				"path": "/services/2"
 			},
 			{
 				"id": 3,
-				"name": "Sustainability and ESG Consulting",
+				"name": "Консалтинг по устойчивому развитию и ESG",
 				"icon": "tji-service-3",
 				"path": "/services/3"
 			},
 			{
 				"id": 4,
-				"name": "Training and Development Programs",
+				"name": "Программы обучения и развития",
 				"icon": "tji-service-4",
 				"path": "/services/4"
 			},
 			{
 				"id": 5,
-				"name": "IT Support & Maintenance",
+				"name": "IT-поддержка и сопровождение",
 				"icon": "tji-service-5",
 				"path": "/services/5"
 			},
 			{
 				"id": 6,
-				"name": "Marketing Strategy & Campaigns",
+				"name": "Маркетинговая стратегия и кампании",
 				"icon": "tji-service-6",
 				"path": "/services/6"
 			}
@@ -273,47 +273,47 @@
 	},
 	{
 		"id": 4,
-		"name": "Portfolio",
+		"name": "Портфолио",
 		"path": "/portfolios",
 		"submenu": [
 			{
 				"id": 1,
-				"name": "Portfolios",
+				"name": "Портфолио",
 				"path": "/portfolios"
 			},
 			{
 				"id": 2,
-				"name": "Portfolio details",
+				"name": "Детали проекта",
 				"path": "/portfolios/1"
 			}
 		]
 	},
 	{
 		"id": 5,
-		"name": "Blog",
+		"name": "Блог",
 		"path": "/blogs",
 		"submenu": [
 			{
 				"id": 1,
-				"name": "Blog",
+				"name": "Блог",
 				"path": "/blogs",
-				"badge": "NEW"
+				"badge": "Новое"
 			},
 			{
 				"id": 2,
-				"name": "Blog grid",
+				"name": "Блог: сетка",
 				"path": "/blog-grid",
 				"badge": null
 			},
 			{
 				"id": 3,
-				"name": "Blog with sidebar",
+				"name": "Блог: с сайдбаром",
 				"path": "/blog-sidebar",
 				"badge": null
 			},
 			{
 				"id": 4,
-				"name": "Blog details",
+				"name": "Блог: детали",
 				"path": "/blogs/1",
 				"badge": null
 			}
@@ -321,7 +321,7 @@
 	},
 	{
 		"id": 6,
-		"name": "Contact",
+		"name": "Контакты",
 		"path": "/contact"
 	}
 ]

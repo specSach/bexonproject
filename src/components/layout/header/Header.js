@@ -148,7 +148,7 @@ const Header = ({
 									)}
 									{headerType !== 5 ? (
 										<div className="header-button">
-											<ButtonPrimary text={"Let’s Talk"} url={"/contact"} />
+											<ButtonPrimary text={"Обсудить проект"} url={"/contact"} />
 										</div>
 									) : (
 										""
@@ -196,7 +196,7 @@ const Header = ({
 													<input
 														className="search-form-input"
 														type="text"
-														placeholder="Type Words and Hit Enter"
+														placeholder="Введите запрос и нажмите Enter"
 														required
 													/>
 													<button type="submit">

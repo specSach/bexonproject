@@ -60,7 +60,7 @@ const Navbar = ({ headerType, isStickyHeader }) => {
 																	{!item?.isComming ? (
 																		<div className="tj-demo-button">
 																			<ButtonPrimary
-																				text={"View demo"}
+																				text={"Смотреть демо"}
 																				url={item?.path}
 																				className={"header_btn"}
 																			/>
@@ -139,8 +139,8 @@ const Navbar = ({ headerType, isStickyHeader }) => {
 										<div className="mega-menu-pages-single-inner">
 											<div className="feature-box">
 												<div className="feature-content">
-													<h2 className="title">Modern</h2>
-													<span>Home Makeover</span>
+													<h2 className="title">Современно</h2>
+													<span>Обновление интерьера</span>
 													<Link
 														className="read-more feature-contact"
 														href="tel:8321890640"
@@ -186,7 +186,7 @@ const Navbar = ({ headerType, isStickyHeader }) => {
 												<span className="mega-menu-service-title">
 													{item?.name
 														? item?.name
-														: "Business process optimization"}
+														: "Оптимизация бизнес-процессов"}
 												</span>{" "}
 												<span className="mega-menu-service-nav">
 													<i className="tji-arrow-right-long"></i>
@@ -214,7 +214,7 @@ const Navbar = ({ headerType, isStickyHeader }) => {
 											className={item?.isActive ? "current-menu-item" : ""}
 										>
 											<Link href={item?.path ? item?.path : "/portfolios"}>
-												{item?.name ? item?.name : "Portfolio"}
+												{item?.name ? item?.name : "Портфолио"}
 											</Link>
 										</li>
 								  ))
@@ -237,7 +237,7 @@ const Navbar = ({ headerType, isStickyHeader }) => {
 											className={item?.isActive ? "current-menu-item" : ""}
 										>
 											<Link href={item?.path ? item?.path : "/portfolios"}>
-												{item?.name ? item?.name : "Portfolio"}
+												{item?.name ? item?.name : "Портфолио"}
 											</Link>
 										</li>
 								  ))
@@ -246,7 +246,7 @@ const Navbar = ({ headerType, isStickyHeader }) => {
 					</li>
 					<li className={contactNav?.isActive ? "current-menu-ancestor" : ""}>
 						<Link href={contactNav?.path ? contactNav?.path : "#"}>
-							{contactNav?.name ? contactNav?.name : "Contact"}
+							{contactNav?.name ? contactNav?.name : "Контакты"}
 						</Link>
 					</li>
 				</ul>

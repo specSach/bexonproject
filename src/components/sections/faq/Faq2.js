@@ -7,28 +7,28 @@ import Link from "next/link";
 const Faq2 = ({ type = 1 }) => {
 	const items = [
 		{
-			title: "What services does Bexon offer to clients?",
-			desc: "	Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery.",
+			title: "Какие услуги Bexon предоставляет клиентам?",
+			desc: "Начать просто: оставьте заявку через форму обратной связи или позвоните нам, и мы согласуем консультацию по вашему проекту. На каждом этапе вы получаете прозрачную коммуникацию, контроль качества и соблюдение сроков.",
 			initActive: true,
 		},
 		{
-			title: "How do I get started with Corporate Business?",
-			desc: "	Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery.",
+			title: "Как начать сотрудничество с корпоративным направлением?",
+			desc: "Начать просто: оставьте заявку через форму обратной связи или позвоните нам, и мы согласуем консультацию по вашему проекту. На каждом этапе вы получаете прозрачную коммуникацию, контроль качества и соблюдение сроков.",
 			initActive: false,
 		},
 		{
-			title: "How do you ensure the success of a project?",
-			desc: "	Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery.",
+			title: "Как вы обеспечиваете успех проекта?",
+			desc: "Начать просто: оставьте заявку через форму обратной связи или позвоните нам, и мы согласуем консультацию по вашему проекту. На каждом этапе вы получаете прозрачную коммуникацию, контроль качества и соблюдение сроков.",
 			initActive: false,
 		},
 		{
-			title: "How long will it take to complete my project?",
-			desc: "	Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery.",
+			title: "Сколько времени занимает реализация проекта?",
+			desc: "Начать просто: оставьте заявку через форму обратной связи или позвоните нам, и мы согласуем консультацию по вашему проекту. На каждом этапе вы получаете прозрачную коммуникацию, контроль качества и соблюдение сроков.",
 			initActive: false,
 		},
 		{
-			title: "Can I track the progress of my project?",
-			desc: "	Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery.",
+			title: "Могу ли я отслеживать ход проекта?",
+			desc: "Начать просто: оставьте заявку через форму обратной связи или позвоните нам, и мы согласуем консультацию по вашему проекту. На каждом этапе вы получаете прозрачную коммуникацию, контроль качества и соблюдение сроков.",
 			initActive: false,
 		},
 	];
@@ -45,18 +45,18 @@ const Faq2 = ({ type = 1 }) => {
 							<div className="content-wrap">
 								<div className="sec-heading">
 									<span className="sub-title wow fadeInUp" data-wow-delay=".3s">
-										<i className="tji-box"></i>Common Questions
+										<i className="tji-box"></i>Частые вопросы
 									</span>
 									<h2 className="sec-title title-anim">
-										Need <span>Help?</span> Start Here...
+										Нужна <span>помощь?</span> Начните здесь...
 									</h2>
 								</div>
 								<p className="desc wow fadeInUp" data-wow-delay=".6s">
-									We stay ahead of curve, leveraging <br /> cutting-edge are
-									technologies and <br /> strategies to competitive
+									Мы работаем на опережение, используя <br /> передовые
+									технологии и <br /> эффективные стратегии.
 								</p>
 								<div className="wow fadeInUp" data-wow-delay=".8s">
-									<ButtonPrimary text={"Request a Call"} url={"/contact"} />
+									<ButtonPrimary text={"Заказать звонок"} url={"/contact"} />
 								</div>
 							</div>
 						</div>
@@ -75,12 +75,12 @@ const Faq2 = ({ type = 1 }) => {
 										height={629}
 									/>
 									<h2 className={`title ${type === 4 ? "title-anim" : ""}`}>
-										Need Help? Start Here...
+										Нужна помощь? Начните здесь...
 									</h2>
 								</div>
 								<div className="box-area ">
 									<div className="call-box">
-										<h4 className="title">Get Started Free Call? </h4>
+										<h4 className="title">Бесплатная консультация</h4>
 										<span className="call-icon">
 											<i className="tji-phone"></i>
 										</span>

@@ -27,10 +27,10 @@ const About1 = () => {
 									className="experience-box wow fadeInUp"
 									data-wow-delay=".3s"
 								>
-									<span className="sub-title">Experiences</span>
+									<span className="sub-title">Опыт</span>
 									<div className="customers-number">13+</div>
 									<h6 className="customers-text">
-										Decades of Experience, Endless Innovation
+										Десятилетия практики и непрерывных инноваций
 									</h6>
 								</div>
 							</div>
@@ -43,16 +43,16 @@ const About1 = () => {
 						>
 							<div className="sec-heading">
 								<span className="sub-title wow fadeInUp" data-wow-delay=".3s">
-									<i className="tji-box"></i>Get to Know Us
+									<i className="tji-box"></i>Познакомьтесь с нами
 								</span>
 								<h2 className="sec-title title-anim">
-									Empowering Businesses with Innovation, Expertise, and for{" "}
-									<span>Success.</span>
+									Помогаем бизнесу расти через инновации, экспертизу и{" "}
+									<span>результат.</span>
 								</h2>
 							</div>
 							<div className="wow fadeInUp" data-wow-delay=".5s">
 								<ButtonPrimary
-									text={"Learn More"}
+									text={"Подробнее"}
 									url={"/about"}
 									isTextBtn={true}
 								/>
@@ -67,13 +67,13 @@ const About1 = () => {
 									<Ratings1 />
 								</div>
 								<p className="desc">
-									We believe in building lasting relationships with our clients
-									through trust, innovation, and exceptional service.
+									Мы выстраиваем долгосрочные отношения с клиентами на основе
+									доверия, инноваций и безупречного сервиса.
 								</p>
 								<div className="client-info-area">
 									<div className="client-info">
 										<h6 className="title">Esther Howard</h6>
-										<span className="designation">Co.Founder</span>
+										<span className="designation">Сооснователь</span>
 									</div>
 									<span className="quote-icon">
 										<i className="tji-quote"></i>

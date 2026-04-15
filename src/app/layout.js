@@ -19,14 +19,14 @@ import "./globals.scss";
 
 const bodyFont = Mona_Sans({
 	variable: "--tj-ff-body",
-	subsets: ["latin"],
+	subsets: ["latin", "cyrillic"],
 	weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
 	style: ["normal", "italic"],
 	display: "swap",
 });
 const headingFont = Mona_Sans({
 	variable: "--tj-ff-heading",
-	subsets: ["latin"],
+	subsets: ["latin", "cyrillic"],
 	weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
 	style: ["normal", "italic"],
 	display: "swap",
@@ -39,7 +39,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en" data-scroll-behavior="smooth" dir="ltr">
+		<html lang="ru" data-scroll-behavior="smooth" dir="ltr">
 			<body className={`${bodyFont.variable} ${headingFont.variable}`}>
 				<TopPageBar />
 				{children}

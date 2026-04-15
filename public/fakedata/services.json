@@ -1,8 +1,8 @@
 [
 	{
 		"id": 1,
-		"title": "Business Strategy Development",
-		"shortTitle": "Business Strategy",
+		"title": "Разработка бизнес-стратегии",
+		"shortTitle": "Бизнес-стратегия",
 		"titleLarge": "Strategic planning and execution in the comprehensive process of formulating goals",
 		"img": "/images/service/service-1.webp",
 		"img2": "/images/service/service-2.webp",
@@ -47,8 +47,8 @@
 	},
 	{
 		"id": 2,
-		"title": "Customer Experience Solutions",
-		"shortTitle": "Customer Experience",
+		"title": "Решения для клиентского опыта",
+		"shortTitle": "Клиентский опыт",
 		"titleLarge": "Strategic planning and execution in the comprehensive process of formulating goals",
 		"img": "/images/service/service-5.webp",
 		"img2": "/images/service/service-3.webp",
@@ -93,8 +93,8 @@
 	},
 	{
 		"id": 3,
-		"title": "Sustainability and ESG Consulting",
-		"shortTitle": "ESG Consulting",
+		"title": "Консалтинг по устойчивому развитию и ESG",
+		"shortTitle": "ESG-консалтинг",
 		"titleLarge": "Strategic planning and execution in the comprehensive process of formulating goals",
 		"img": "/images/service/service-6.webp",
 		"img2": "/images/service/service-4.webp",
@@ -139,8 +139,8 @@
 	},
 	{
 		"id": 4,
-		"title": "Training Development Programs",
-		"shortTitle": "Training Programs",
+		"title": "Программы обучения и развития",
+		"shortTitle": "Обучение и развитие",
 		"titleLarge": "Strategic planning and execution in the comprehensive process of formulating goals",
 		"img": "/images/service/service-7.webp",
 		"img2": "/images/service/service-6.webp",

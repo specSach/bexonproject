@@ -34,28 +34,27 @@ const ContactMenu = ({ isContactOpen, setIsContactOpen }) => {
 						</div>
 						<div className="offcanvas-text">
 							<p>
-								Developing personalize our customer journeys to increase
-								satisfaction & loyalty of our expansion recognized by industry
-								leaders.
+								Мы персонализируем клиентский путь, повышая удовлетворенность
+								и лояльность, а наш подход получает признание лидеров отрасли.
 							</p>
 						</div>
 						<div className="hamburger-infos">
-							<h5 className="hamburger-title">Contact Info</h5>
+							<h5 className="hamburger-title">Контактная информация</h5>
 							<div className="contact-info">
 								<div className="contact-item">
-									<span className="subtitle">Phone</span>
+									<span className="subtitle">Телефон</span>
 									<Link className="contact-link" href="tel:10095447818">
 										+1 (009) 544-7818
 									</Link>
 								</div>
 								<div className="contact-item">
-									<span className="subtitle">Email</span>
+									<span className="subtitle">Эл. почта</span>
 									<Link className="contact-link" href="mailto:info@bexon.com">
 										info@bexon.com
 									</Link>
 								</div>
 								<div className="contact-item">
-									<span className="subtitle">Location</span>
+									<span className="subtitle">Адрес</span>
 									<span className="contact-link">
 										993 Renner Burg, West Rond, MT 94251-030
 									</span>
@@ -64,7 +63,7 @@ const ContactMenu = ({ isContactOpen, setIsContactOpen }) => {
 						</div>
 					</div>
 					<div className="hamburger-socials">
-						<h5 className="hamburger-title">Follow Us</h5>
+						<h5 className="hamburger-title">Мы в соцсетях</h5>
 						<div className="social-links style-3">
 							<ul>
 								<li>

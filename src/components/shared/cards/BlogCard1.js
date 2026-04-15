@@ -32,14 +32,14 @@ const BlogCard1 = ({ blog, idx }) => {
 						</Link>
 					</span>
 					<span>
-						By <Link href={`/blogs/${id}`}>Ellinien Loma</Link>
+						Автор: <Link href={`/blogs/${id}`}>Эллиниен Лома</Link>
 					</span>
 				</div>
 				<h4 className="title">
 					<Link href={`/blogs/${id}`}>{title}.</Link>
 				</h4>
 				<ButtonPrimary
-					text={"Read More"}
+					text={"Читать далее"}
 					url={`/blogs/${id}`}
 					isTextBtn={true}
 				/>
