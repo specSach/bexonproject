@@ -2,7 +2,15 @@ import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
 import PortfolioCard1 from "@/components/shared/cards/PortfolioCard1";
 import getPortfolio from "@/libs/getPortfolio";
 const Portfolios1 = () => {
-	const portfolio = getPortfolio()?.slice(0, 4);
+	const customProjectImages = [
+		"/images/gallery/project-pack-1.jpg",
+		"/images/gallery/project-pack-2.jpg",
+		"/images/gallery/project-pack-3.jpg",
+		"/images/gallery/project-pack-4.jpg",
+	];
+	const portfolio = getPortfolio()
+		?.slice(0, 4)
+		?.map((item, idx) => ({ ...item, img: customProjectImages[idx] || item.img }));
 	return (
 		<section className="tj-project-section section-gap">
 			<div className="container">
@@ -35,7 +43,11 @@ const Portfolios1 = () => {
 						<div className="project-area tj-arrange-container">
 							{portfolio?.length
 								? portfolio?.map((portfolioSingle, idx) => (
-										<PortfolioCard1 key={idx} portfolio={portfolioSingle} />
+										<PortfolioCard1
+											key={idx}
+											portfolio={portfolioSingle}
+											hideOverlay={true}
+										/>
 								  ))
 								: ""}
 						</div>

@@ -43,14 +43,14 @@ const ContactMenu = ({ isContactOpen, setIsContactOpen }) => {
 							<div className="contact-info">
 								<div className="contact-item">
 									<span className="subtitle">Телефон</span>
-									<Link className="contact-link" href="tel:10095447818">
-										+1 (009) 544-7818
+									<Link className="contact-link" href="tel:+74992291808">
+										+7(499)229-18-08
 									</Link>
 								</div>
 								<div className="contact-item">
 									<span className="subtitle">Эл. почта</span>
-									<Link className="contact-link" href="mailto:info@bexon.com">
-										info@bexon.com
+									<Link className="contact-link" href="mailto:info@glstrap.ru">
+										info@glstrap.ru
 									</Link>
 								</div>
 								<div className="contact-item">

@@ -90,19 +90,19 @@ const Footer = () => {
 								<div className="footer-contact">
 									<ul>
 										<li>
-											<Link href="tel:10095447818">
+											<Link href="tel:+74992291808">
 												<span className="icon">
 													<i className="tji-phone-2"></i>
 												</span>
-												<span className="text">+1 (009) 544-7818</span>
+												<span className="text">+7(499)229-18-08</span>
 											</Link>
 										</li>
 										<li>
-											<Link href="mailto:info@bexon.com">
+											<Link href="mailto:info@glstrap.ru">
 												<span className="icon">
 													<i className="tji-envelop-2"></i>
 												</span>
-												<span className="text">info@bexon.com</span>
+												<span className="text">info@glstrap.ru</span>
 											</Link>
 										</li>
 									</ul>

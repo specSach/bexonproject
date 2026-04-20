@@ -22,7 +22,7 @@ const HeaderTop = ({ type }) => {
 									<span>
 										<i className="tji-phone-3"></i>
 									</span>
-									<Link href="tel:8089091313">808-909-1313</Link>
+									<Link href="tel:+74992291808">+7(499)229-18-08</Link>
 								</div>
 								<div className="info-item">
 									<div className="social-links style-2">

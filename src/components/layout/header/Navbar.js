@@ -143,10 +143,10 @@ const Navbar = ({ headerType, isStickyHeader }) => {
 													<span>Обновление интерьера</span>
 													<Link
 														className="read-more feature-contact"
-														href="tel:8321890640"
+														href="tel:+74992291808"
 													>
 														<i className="tji-phone-3"></i>
-														<span>+8 (321) 890-640</span>
+														<span>+7(499)229-18-08</span>
 													</Link>
 												</div>
 												<div className="feature-images">
