@@ -109,6 +109,7 @@ START: Choose CSS
 				inset 0 0 0 2px rgba(255, 255, 255, 0.8);
 		}
 		&:hover {
+			cursor: none;
 			.choose-hover-reveal {
 				opacity: 1;
 				transform: translate(-50%, -50%) scale(1);
@@ -120,6 +121,12 @@ START: Choose CSS
 		.choose-content {
 			position: relative;
 			z-index: 2;
+		}
+	}
+	&.choose-box-stropa-compact {
+		.choose-media {
+			height: 200px;
+			--stropa-size: 85px;
 		}
 	}
 	.title {

@@ -3,7 +3,7 @@
 import Link from "next/link";
 
 const FeatureCard = ({ feature, type, idx }) => {
-	const { icon, title, desc, isStropa, image, hoverImage } = feature ? feature : {};
+	const { icon, title, desc, isStropa, image, hoverImage, stropaCompact } = feature ? feature : {};
 
 	const updateCursorPosition = (event) => {
 		if (!isStropa) return;
@@ -26,7 +26,7 @@ const FeatureCard = ({ feature, type, idx }) => {
 		<div
 			className={`choose-box ${type === 2 ? "h6-choose-box" : ""} right-swipe ${
 				isStropa ? "choose-box-stropa" : ""
-			}`}
+			} ${stropaCompact ? "choose-box-stropa-compact" : ""}`}
 		>
 			<div className="choose-content">
 				{isStropa ? (

@@ -7,9 +7,6 @@ const Features = ({ type }) => {
 			title: "Инновационные решения",
 			desc: "Мы работаем на опережение, применяя передовые технологии и стратегии, чтобы ваш бизнес уверенно конкурировал на рынке.",
 			icon: "tji-innovative",
-			isStropa: true,
-			image: "/images/choose/stropa-bg.jpeg",
-			hoverImage: "/images/choose/stropa-bg-hover.jpeg",
 		},
 		{
 			title: "Экспертность, отмеченная наградами",
@@ -27,6 +24,15 @@ const Features = ({ type }) => {
 			icon: "tji-team",
 		},
 	];
+	const stropaFeatureMedia = {
+		isStropa: true,
+		image: "/images/choose/stropa-bg.jpeg",
+		hoverImage: "/images/choose/stropa-bg-hover.jpeg",
+	};
+	const stropaFeatureMediaCompact = {
+		...stropaFeatureMedia,
+		stropaCompact: true,
+	};
 
 	const renderHeading = (showSubTitle = true) => {
 		if (type == 2) {
@@ -75,7 +81,7 @@ const Features = ({ type }) => {
 					<div className="row row-gap-4 rightSwipeWrap">
 						{features.map((feature, idx) => (
 							<div key={idx} className="col-md-6">
-								<FeatureCard feature={feature} idx={idx} />
+								<FeatureCard feature={{ ...feature, ...stropaFeatureMedia }} idx={idx} />
 							</div>
 						))}
 					</div>
@@ -87,13 +93,16 @@ const Features = ({ type }) => {
 						<div className="row">
 							<div className="col-12">{renderHeading(false)}</div>
 						</div>
-						<div className="row row-gap-4 rightSwipeWrap">
-							{features.map((feature, idx) => (
-								<div key={`horizontal-${idx}`} className="col-lg-3 col-md-6">
-									<FeatureCard feature={feature} idx={idx} />
-								</div>
-							))}
-						</div>
+							<div className="row row-gap-4 rightSwipeWrap">
+								{features.map((feature, idx) => (
+									<div key={`horizontal-${idx}`} className="col-lg-3 col-md-6">
+										<FeatureCard
+											feature={{ ...feature, ...stropaFeatureMediaCompact }}
+											idx={idx}
+										/>
+									</div>
+								))}
+							</div>
 					</div>
 				</section>
 			) : null}
