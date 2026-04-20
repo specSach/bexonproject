@@ -164,11 +164,11 @@ START: Hero CSS
 	}
 	.banner-desc {
 		color: var(--tj-color-text-body-2);
-		font-size: 18px;
+		font-size: 14px;
 		line-height: 1.444;
 		max-width: 517px;
 		@media #{$xl, $xs} {
-			font-size: 16px;
+			font-size: 14px;
 		}
 	}
 
