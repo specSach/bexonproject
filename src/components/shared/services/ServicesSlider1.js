@@ -4,8 +4,7 @@ import getALlServices from "@/libs/getALlServices";
 import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 const ServicesSlider1 = () => {
-	const showableSevices = getALlServices()?.slice(0, 4);
-	const services = [...showableSevices, ...showableSevices];
+	const services = getALlServices()?.slice(0, 8);
 	return (
 		<Swiper
 			slidesPerView={1.3}

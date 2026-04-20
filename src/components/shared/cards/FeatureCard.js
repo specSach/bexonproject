@@ -59,7 +59,7 @@ const FeatureCard = ({ feature, type, idx }) => {
 						<i className={icon}></i>
 					</div>
 				)}
-				<h4 className="title">{title}</h4>
+				{title ? <h4 className="title">{title}</h4> : null}
 				<p className="desc">{desc}</p>
 				<Link className="text-btn choose-more-btn" href="/about">
 					<span className="btn-text">
