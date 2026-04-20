@@ -33,6 +33,9 @@ START: Choose CSS
 	}
 }
 .choose-box {
+	--stropa-x: 50%;
+	--stropa-y: 50%;
+	--stropa-size: 170px;
 	height: 100%;
 	padding: 50px 28px 45px;
 	background-color: var(--tj-color-common-white);
@@ -64,6 +67,63 @@ START: Choose CSS
 			font-size: 65px;
 			max-width: 65px;
 			margin-bottom: 20px;
+		}
+	}
+	.choose-media {
+		width: 135px;
+		height: 135px;
+		margin-bottom: 43px;
+		border-radius: 20px;
+		overflow: hidden;
+		position: relative;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+		}
+		@media #{$xl, $lg} {
+			margin-bottom: 30px;
+		}
+		@media #{$md, $sm, $xs} {
+			width: 65px;
+			height: 65px;
+			margin-bottom: 20px;
+		}
+	}
+	.choose-hover-reveal {
+		position: absolute;
+		top: var(--stropa-y);
+		inset-inline-start: var(--stropa-x);
+		width: var(--stropa-size);
+		height: var(--stropa-size);
+		border-radius: 50%;
+		transform: translate(-50%, -50%) scale(0.6);
+		transform-origin: center;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		opacity: 0;
+		pointer-events: none;
+		z-index: 1;
+		transition:
+			opacity 0.22s ease,
+			transform 0.22s ease;
+		box-shadow:
+			0 14px 30px rgba(0, 0, 0, 0.2),
+			inset 0 0 0 2px rgba(255, 255, 255, 0.8);
+	}
+	&.choose-box-stropa {
+		padding: 35px 25px 30px;
+		.choose-content {
+			position: relative;
+			z-index: 2;
+		}
+		&:hover {
+			.choose-hover-reveal {
+				opacity: 1;
+				transform: translate(-50%, -50%) scale(1);
+			}
 		}
 	}
 	.title {

@@ -7,6 +7,9 @@ const Features = ({ type }) => {
 			title: "Инновационные решения",
 			desc: "Мы работаем на опережение, применяя передовые технологии и стратегии, чтобы ваш бизнес уверенно конкурировал на рынке.",
 			icon: "tji-innovative",
+			isStropa: true,
+			image: "/images/choose/stropa-bg.jpeg",
+			hoverImage: "/images/choose/stropa-bg-hover.jpeg",
 		},
 		{
 			title: "Экспертность, отмеченная наградами",
