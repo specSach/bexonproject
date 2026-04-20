@@ -1,49 +1,42 @@
 "use client";
 
-import { useRef } from "react";
 import Link from "next/link";
 
 const FeatureCard = ({ feature, type, idx }) => {
 	const { icon, title, desc, isStropa, image, hoverImage } = feature ? feature : {};
-	const cardRef = useRef(null);
 
 	const updateCursorPosition = (event) => {
-		if (!isStropa || !cardRef.current) return;
-		const rect = cardRef.current.getBoundingClientRect();
+		if (!isStropa) return;
+		const mediaElement = event.currentTarget;
+		const rect = mediaElement.getBoundingClientRect();
 		const x = event.clientX - rect.left;
 		const y = event.clientY - rect.top;
-		cardRef.current.style.setProperty("--stropa-x", `${x}px`);
-		cardRef.current.style.setProperty("--stropa-y", `${y}px`);
+		mediaElement.style.setProperty("--stropa-x", `${x}px`);
+		mediaElement.style.setProperty("--stropa-y", `${y}px`);
 	};
 
-	const resetCursorPosition = () => {
-		if (!isStropa || !cardRef.current) return;
-		cardRef.current.style.setProperty("--stropa-x", "50%");
-		cardRef.current.style.setProperty("--stropa-y", "50%");
+	const resetCursorPosition = (event) => {
+		if (!isStropa) return;
+		const mediaElement = event.currentTarget;
+		mediaElement.style.setProperty("--stropa-x", "50%");
+		mediaElement.style.setProperty("--stropa-y", "50%");
 	};
 
 	return (
 		<div
-			ref={cardRef}
 			className={`choose-box ${type === 2 ? "h6-choose-box" : ""} right-swipe ${
 				isStropa ? "choose-box-stropa" : ""
 			}`}
-			onMouseMove={updateCursorPosition}
-			onMouseEnter={updateCursorPosition}
-			onMouseLeave={resetCursorPosition}
 		>
-			{isStropa ? (
-				<div
-					className="choose-hover-reveal"
-					aria-hidden="true"
-					style={{
-						backgroundImage: `url(${hoverImage ? hoverImage : "/images/choose/stropa-bg-hover.jpeg"})`,
-					}}
-				></div>
-			) : null}
 			<div className="choose-content">
 				{isStropa ? (
-					<div className="choose-media" aria-hidden="true">
+					<div
+						className="choose-media"
+						aria-hidden="true"
+						onMouseMove={updateCursorPosition}
+						onMouseEnter={updateCursorPosition}
+						onMouseLeave={resetCursorPosition}
+					>
 						<img
 							src={image ? image : "/images/choose/stropa-bg.jpeg"}
 							alt=""
@@ -53,6 +46,13 @@ const FeatureCard = ({ feature, type, idx }) => {
 								event.currentTarget.src = "/images/choose/choose-img.webp";
 							}}
 						/>
+						<div
+							className="choose-hover-reveal"
+							aria-hidden="true"
+							style={{
+								backgroundImage: `url(${hoverImage ? hoverImage : "/images/choose/stropa-bg-hover.jpeg"})`,
+							}}
+						></div>
 					</div>
 				) : (
 					<div className="choose-icon">
