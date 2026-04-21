@@ -549,6 +549,38 @@ START: Services CSS
 			margin-bottom: 50px;
 		}
 	}
+	.service-slider {
+		@media #{$lg, $md, $sm, $xs} {
+			.swiper-slide-active {
+				.service-item.style-1 {
+					&::before {
+						background: var(--tj-color-theme-dark);
+						opacity: 0.7;
+					}
+					&::after {
+						opacity: 0.3;
+					}
+					.service-icon {
+						transform: scale(0);
+					}
+					.service-content {
+						padding-bottom: 80px;
+					}
+					.desc {
+						opacity: 1;
+						visibility: visible;
+						height: 100%;
+					}
+					.text-btn {
+						opacity: 1;
+						visibility: visible;
+						bottom: 30px;
+						transition: all 0.2s linear;
+					}
+				}
+			}
+		}
+	}
 }
 .bg-shape-3,
 .bg-shape-4 {

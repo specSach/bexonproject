@@ -2,11 +2,16 @@
 
 import Link from "next/link";
 
-const FeatureCard = ({ feature, type, idx }) => {
+const FeatureCard = ({ feature, type, idx, onDetailsOpen }) => {
 	const { icon, title, desc, isStropa, image, hoverImage, stropaCompact } = feature ? feature : {};
 
+	const shouldTrackLens = () => {
+		if (typeof window === "undefined") return false;
+		return window.matchMedia("(min-width: 1200px) and (hover: hover) and (pointer: fine)").matches;
+	};
+
 	const updateCursorPosition = (event) => {
-		if (!isStropa) return;
+		if (!isStropa || !shouldTrackLens()) return;
 		const mediaElement = event.currentTarget;
 		const rect = mediaElement.getBoundingClientRect();
 		const x = event.clientX - rect.left;
@@ -16,7 +21,7 @@ const FeatureCard = ({ feature, type, idx }) => {
 	};
 
 	const resetCursorPosition = (event) => {
-		if (!isStropa) return;
+		if (!isStropa || !shouldTrackLens()) return;
 		const mediaElement = event.currentTarget;
 		mediaElement.style.setProperty("--stropa-x", "50%");
 		mediaElement.style.setProperty("--stropa-y", "50%");
@@ -61,14 +66,33 @@ const FeatureCard = ({ feature, type, idx }) => {
 				)}
 				{title ? <h4 className="title">{title}</h4> : null}
 				<p className="desc">{desc}</p>
-				<Link className="text-btn choose-more-btn" href="/about">
-					<span className="btn-text">
-						<span>{"\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435"}</span>
-					</span>
-					<span className="btn-icon">
-						<i className="tji-arrow-right-long"></i>
-					</span>
-				</Link>
+				{onDetailsOpen ? (
+					<button
+						type="button"
+						className="text-btn choose-more-btn choose-modal-trigger"
+						onClick={(event) => {
+							event.preventDefault();
+							event.stopPropagation();
+							onDetailsOpen();
+						}}
+					>
+						<span className="btn-text">
+							<span>{"\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435"}</span>
+						</span>
+						<span className="btn-icon">
+							<i className="tji-arrow-right-long"></i>
+						</span>
+					</button>
+				) : (
+					<Link className="text-btn choose-more-btn" href="/about">
+						<span className="btn-text">
+							<span>{"\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435"}</span>
+						</span>
+						<span className="btn-icon">
+							<i className="tji-arrow-right-long"></i>
+						</span>
+					</Link>
+				)}
 			</div>
 		</div>
 	);
