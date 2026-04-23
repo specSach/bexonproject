@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Hero = () => {
 	return (
-		<section className="tj-banner-section section-gap-x">
+		<section id="home" className="tj-banner-section section-gap-x">
 			<div className="banner-area">
 				<div className="banner-left-box">
 					<div className="banner-content">
@@ -42,44 +42,11 @@ const Hero = () => {
 							height={793}
 						/>
 					</div>
-					<div className="box-area">
-						<div className="customers-box">
-							<div className="customers">
-								<ul>
-									<li className="wow fadeInLeft" data-wow-delay=".5s">
-										<Image
-											src="/images/testimonial/client-1.webp"
-											alt=""
-											width={89}
-											height={89}
-										/>
-									</li>
-									<li className="wow fadeInLeft" data-wow-delay=".6s">
-										<Image
-											src="/images/testimonial/client-2.webp"
-											alt=""
-											width={89}
-											height={89}
-										/>
-									</li>
-									<li className="wow fadeInLeft" data-wow-delay=".7s">
-										<Image
-											src="/images/testimonial/client-3.webp"
-											alt=""
-											width={89}
-											height={89}
-										/>
-									</li>
-									<li className="wow fadeInLeft" data-wow-delay=".8s">
-										<span>
-											<i className="tji-plus"></i>
-										</span>
-									</li>
-								</ul>
-							</div>
-							<div
-								className="customers-number wow fadeInUp"
-								data-wow-delay=".5s"
+						<div className="box-area">
+							<div className="customers-box customers-box-compact">
+								<div
+									className="customers-number wow fadeInUp"
+									data-wow-delay=".5s"
 							>
 								30K
 							</div>
@@ -91,7 +58,7 @@ const Hero = () => {
 				</div>
 			</div>
 			<div className="banner-scroll wow fadeInDown" data-wow-delay="2s">
-				<button data-target="#choose" className="scroll-down tj-scroll-btn">
+				<button data-target="#products" className="scroll-down tj-scroll-btn">
 					<span>
 						<i className="tji-arrow-down-long"></i>
 					</span>

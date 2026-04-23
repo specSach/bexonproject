@@ -177,7 +177,7 @@ const Features = ({ type }) => {
 
 	return (
 		<>
-			<section id="choose" className="tj-choose-section section-gap">
+			<section id="products" className="tj-choose-section section-gap">
 				<div className="container">
 					<div className="row">
 						<div className="col-12">{renderHeading()}</div>

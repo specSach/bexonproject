@@ -2,7 +2,10 @@ import ServicesSlider1 from "@/components/shared/services/ServicesSlider1";
 
 const Services1 = () => {
 	return (
-		<section className="tj-service-section overflow-hidden section-gap section-gap-x">
+		<section
+			id="advantages"
+			className="tj-service-section overflow-hidden section-gap section-gap-x"
+		>
 			<div className="container">
 				<div className="row">
 					<div className="col-12">

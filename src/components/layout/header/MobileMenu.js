@@ -32,7 +32,7 @@ const MobileMenu = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
 								</button>
 							</div>
 						</div>
-						<MobileNavbar />
+						<MobileNavbar onNavigate={handleClick} />
 						<div className="hamburger-infos">
 							<h5 className="hamburger-title">Контактная информация</h5>
 							<div className="contact-info">

@@ -1,4 +1,3 @@
-import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
 import PortfolioCard1 from "@/components/shared/cards/PortfolioCard1";
 import getPortfolio from "@/libs/getPortfolio";
 const Portfolios1 = () => {
@@ -12,7 +11,7 @@ const Portfolios1 = () => {
 		?.slice(0, 4)
 		?.map((item, idx) => ({ ...item, img: customProjectImages[idx] || item.img }));
 	return (
-		<section className="tj-project-section section-gap">
+		<section id="gallery" className="tj-project-section section-gap">
 			<div className="container">
 				<div className="row">
 					<div className="col-12">
@@ -31,9 +30,6 @@ const Portfolios1 = () => {
 									Мы глубоко погружаемся в задачи клиента и создаем
 									индивидуальные решения, которые закрывают реальные вызовы.
 								</p>
-								<div className="btn-wrap wow fadeInUp" data-wow-delay=".6s">
-									<ButtonPrimary text={"Все проекты"} url="/portfolios" />
-								</div>
 							</div>
 						</div>
 					</div>

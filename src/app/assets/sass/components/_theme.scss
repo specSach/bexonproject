@@ -59,6 +59,14 @@ START: Theme Default CSS
 .site-main {
 	position: relative;
 }
+html {
+	scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
 body {
 	font-family: var(--tj-ff-body);
 	font-size: var(--tj-fs-body);
@@ -384,6 +392,17 @@ img {
 	@media #{$sm, $xs} {
 		margin-inline-start: 12px;
 		margin-inline-end: 12px;
+	}
+}
+#home,
+#products,
+#advantages,
+#gallery,
+#faq,
+#contacts {
+	scroll-margin-top: calc(115px + var(--top-page-bar-offset, 0px));
+	@media #{$md, $sm, $xs} {
+		scroll-margin-top: calc(105px + var(--top-page-bar-offset, 0px));
 	}
 }
 .section-separator {

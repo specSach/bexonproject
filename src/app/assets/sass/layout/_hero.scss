@@ -279,6 +279,11 @@ START: Hero CSS
 	@media #{$sm, $xs} {
 		padding: 25px 18px 20px;
 	}
+	&.customers-box-compact {
+		.customers-number {
+			padding-top: 10px;
+		}
+	}
 }
 .customers {
 	ul {

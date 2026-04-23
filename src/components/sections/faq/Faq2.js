@@ -34,6 +34,7 @@ const Faq2 = ({ type = 1 }) => {
 	];
 	return (
 		<section
+			id="faq"
 			className={`tj-faq-section section-gap  ${
 				type === 3 || type === 4 ? "" : "tj-arrange-container-2"
 			}`}

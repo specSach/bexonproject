@@ -1,6 +1,12 @@
+"use client";
+
 import Link from "next/link";
+import useOnePageScroll from "@/hooks/useOnePageScroll";
+import onePageMenu from "@/libs/onePageMenu";
 
 const Footer = () => {
+	const { handleOnePageNavClick } = useOnePageScroll();
+
 	return (
 		<footer className="tj-footer-section footer-1 section-gap-x">
 			<div className="footer-main-area">
@@ -26,56 +32,18 @@ const Footer = () => {
 								className="footer-widget widget-nav-menu wow fadeInUp"
 								data-wow-delay=".3s"
 							>
-								<h5 className="title">Услуги</h5>
+								<h5 className="title">Меню</h5>
 								<ul>
-									<li>
-										<Link href="/services/1">Клиентский опыт</Link>
-									</li>
-									<li>
-										<Link href="/services/2">Программы обучения</Link>
-									</li>
-									<li>
-										<Link href="/services/3">Бизнес-стратегия</Link>
-									</li>
-									<li>
-										<Link href="/services/4">Развитие персонала</Link>
-									</li>
-									<li>
-										<Link href="/services/5">ESG-консалтинг</Link>
-									</li>
-									<li>
-										<Link href="/services/6">Маркетинговая стратегия</Link>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div className="col-xl-3 col-lg-4 col-md-6">
-							<div
-								className="footer-widget widget-nav-menu wow fadeInUp"
-								data-wow-delay=".5s"
-							>
-								<h5 className="title">Разделы</h5>
-								<ul>
-									<li>
-										<Link href="/contact">Контакты</Link>
-									</li>
-									<li>
-										<Link href="/team">Команда</Link>
-									</li>
-									<li>
-										<Link href="#">Достижения</Link>
-									</li>
-									<li>
-										<Link href="/careers">
-											Карьера <span className="badge">Новое</span>
-										</Link>
-									</li>
-									<li>
-										<Link href="/blogs">Новости</Link>
-									</li>
-									<li>
-										<Link href="#">Отзывы</Link>
-									</li>
+									{onePageMenu.map((item) => (
+										<li key={item.id}>
+											<Link
+												href={item.href}
+												onClick={(event) => handleOnePageNavClick(event, item.href)}
+											>
+												{item.label}
+											</Link>
+										</li>
+									))}
 								</ul>
 							</div>
 						</div>
@@ -133,7 +101,7 @@ const Footer = () => {
 								</div>
 								<div className="copyright-text">
 									<p>
-										&copy; 2025 
+										&copy; 2025{" "}
 										<Link
 											href="https://themeforest.net/user/theme-junction/portfolio"
 											target="_blank"
