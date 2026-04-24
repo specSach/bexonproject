@@ -42,6 +42,25 @@ const Features = ({ type }) => {
 		stropaCompact: true,
 	};
 
+	const accessoriesMedia = [
+		{
+			image: "/images/choose/kleshy.jpg",
+			alt: "Клещи для упаковочной стропы",
+		},
+		{
+			image: "/images/choose/pryajki.jpg",
+			alt: "Пряжки для упаковочной стропы",
+		},
+		{
+			image: "/images/choose/skoby.jpg",
+			alt: "Скобы для упаковочной стропы",
+		},
+		{
+			image: "/images/choose/strepping.jpg",
+			alt: "Стреппинг инструмент",
+		},
+	];
+
 	const sectionGapDescs = [
 		"Это упаковочная стропа из мягкого полиэстера. Стропу армируют полипропиленовой нитью и покрывают полимерным составом, который обеспечивает повышенную разрывную нагрузку. Полиэстеровая стропа применяется в процессе упаковки в термоусадочную пленку.",
 		"Это упаковочная тканая стропа. Состоит из полиэфирного волокна. Подбирать такую стропу необходимо в зависимости от груза, который нужно упаковать или закрепить. Тканая стропа очень часто применяется в процессе упаковки в термоусадочную пленку.",
@@ -238,7 +257,13 @@ const Features = ({ type }) => {
 							{features.map((feature, idx) => (
 								<div key={`horizontal-${idx}`} className="col-lg-3 col-md-6">
 									<FeatureCard
-										feature={{ ...feature, ...stropaFeatureMediaCompact }}
+										feature={{
+											...feature,
+											...stropaFeatureMediaCompact,
+											...accessoriesMedia[idx],
+											disableHoverReveal: true,
+											mediaFit: "contain",
+										}}
 										idx={idx}
 										onDetailsOpen={() => openDetails(idx)}
 									/>

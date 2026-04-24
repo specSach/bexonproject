@@ -10,7 +10,7 @@ const ServiceCard1 = ({ service, idx, lastItem }) => {
 			<div className="service-img">
 				<Image
 					src={img ? img : "/images/service/service-1.webp"}
-					alt="Images"
+					alt={title ? `${title} - применение упаковочной стропы` : "Изображение услуги"}
 					width={870}
 					height={450}
 				/>

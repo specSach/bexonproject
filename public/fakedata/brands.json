@@ -1,62 +1,74 @@
 [
 	{
-		"img": "/images/brands/brand-1.webp",
-		"img2": "/images/brands/brand-1-light.webp",
-		"img3": "/images/brands/h5-brand-1.webp"
+		"name": "Aeroflot",
+		"img": "/images/brands/aeroflot.png",
+		"img2": "/images/brands/aeroflot.png",
+		"img3": "/images/brands/aeroflot.png"
 	},
 	{
-		"img": "/images/brands/brand-2.webp",
-		"img2": "/images/brands/brand-2-light.webp",
-		"img3": "/images/brands/h5-brand-2.webp"
+		"name": "Gazprom",
+		"img": "/images/brands/gazprom.png",
+		"img2": "/images/brands/gazprom.png",
+		"img3": "/images/brands/gazprom.png"
 	},
 	{
-		"img": "/images/brands/brand-3.webp",
-		"img2": "/images/brands/brand-3-light.webp",
-		"img3": "/images/brands/h5-brand-3.webp"
+		"name": "Lukoil",
+		"img": "/images/brands/lukoil.png",
+		"img2": "/images/brands/lukoil.png",
+		"img3": "/images/brands/lukoil.png"
 	},
 	{
-		"img": "/images/brands/brand-4.webp",
-		"img2": "/images/brands/brand-4-light.webp",
-		"img3": "/images/brands/h5-brand-4.webp"
+		"name": "Rosatom",
+		"img": "/images/brands/rosatom.jpg",
+		"img2": "/images/brands/rosatom.jpg",
+		"img3": "/images/brands/rosatom.jpg"
 	},
 	{
-		"img": "/images/brands/brand-5.webp",
-		"img2": "/images/brands/brand-5-light.webp",
-		"img3": "/images/brands/h5-brand-5.webp"
+		"name": "RZD",
+		"img": "/images/brands/rzhd.png",
+		"img2": "/images/brands/rzhd.png",
+		"img3": "/images/brands/rzhd.png"
 	},
 	{
-		"img": "/images/brands/brand-6.webp",
-		"img2": "/images/brands/brand-6-light.webp",
-		"img3": "/images/brands/h5-brand-6.webp"
+		"name": "Tatneft",
+		"img": "/images/brands/tatneft.png",
+		"img2": "/images/brands/tatneft.png",
+		"img3": "/images/brands/tatneft.png"
 	},
 	{
-		"img": "/images/brands/brand-1.webp",
-		"img2": "/images/brands/brand-1-light.webp",
-		"img3": "/images/brands/h5-brand-1.webp"
+		"name": "Aeroflot",
+		"img": "/images/brands/aeroflot.png",
+		"img2": "/images/brands/aeroflot.png",
+		"img3": "/images/brands/aeroflot.png"
 	},
 	{
-		"img": "/images/brands/brand-2.webp",
-		"img2": "/images/brands/brand-2-light.webp",
-		"img3": "/images/brands/h5-brand-2.webp"
+		"name": "Gazprom",
+		"img": "/images/brands/gazprom.png",
+		"img2": "/images/brands/gazprom.png",
+		"img3": "/images/brands/gazprom.png"
 	},
 	{
-		"img": "/images/brands/brand-3.webp",
-		"img2": "/images/brands/brand-3-light.webp",
-		"img3": "/images/brands/h5-brand-3.webp"
+		"name": "Lukoil",
+		"img": "/images/brands/lukoil.png",
+		"img2": "/images/brands/lukoil.png",
+		"img3": "/images/brands/lukoil.png"
 	},
 	{
-		"img": "/images/brands/brand-4.webp",
-		"img2": "/images/brands/brand-4-light.webp",
-		"img3": "/images/brands/h5-brand-4.webp"
+		"name": "Rosatom",
+		"img": "/images/brands/rosatom.jpg",
+		"img2": "/images/brands/rosatom.jpg",
+		"img3": "/images/brands/rosatom.jpg"
 	},
 	{
-		"img": "/images/brands/brand-5.webp",
-		"img2": "/images/brands/brand-5-light.webp",
-		"img3": "/images/brands/h5-brand-5.webp"
+		"name": "RZD",
+		"img": "/images/brands/rzhd.png",
+		"img2": "/images/brands/rzhd.png",
+		"img3": "/images/brands/rzhd.png"
 	},
 	{
-		"img": "/images/brands/brand-6.webp",
-		"img2": "/images/brands/brand-6-light.webp",
-		"img3": "/images/brands/h5-brand-6.webp"
+		"name": "Tatneft",
+		"img": "/images/brands/tatneft.png",
+		"img2": "/images/brands/tatneft.png",
+		"img3": "/images/brands/tatneft.png"
 	}
 ]

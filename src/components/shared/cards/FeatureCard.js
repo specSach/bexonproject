@@ -3,7 +3,19 @@
 import Link from "next/link";
 
 const FeatureCard = ({ feature, type, idx, onDetailsOpen }) => {
-	const { icon, title, desc, isStropa, image, hoverImage, stropaCompact } = feature ? feature : {};
+	const {
+		icon,
+		title,
+		desc,
+		isStropa,
+		image,
+		alt,
+		hoverImage,
+		stropaCompact,
+		disableHoverReveal,
+		mediaFit,
+	} = feature ? feature : {};
+	const canShowHoverReveal = isStropa && !disableHoverReveal;
 
 	const shouldTrackLens = () => {
 		if (typeof window === "undefined") return false;
@@ -11,7 +23,7 @@ const FeatureCard = ({ feature, type, idx, onDetailsOpen }) => {
 	};
 
 	const updateCursorPosition = (event) => {
-		if (!isStropa || !shouldTrackLens()) return;
+		if (!canShowHoverReveal || !shouldTrackLens()) return;
 		const mediaElement = event.currentTarget;
 		const rect = mediaElement.getBoundingClientRect();
 		const x = event.clientX - rect.left;
@@ -21,7 +33,7 @@ const FeatureCard = ({ feature, type, idx, onDetailsOpen }) => {
 	};
 
 	const resetCursorPosition = (event) => {
-		if (!isStropa || !shouldTrackLens()) return;
+		if (!canShowHoverReveal || !shouldTrackLens()) return;
 		const mediaElement = event.currentTarget;
 		mediaElement.style.setProperty("--stropa-x", "50%");
 		mediaElement.style.setProperty("--stropa-y", "50%");
@@ -36,7 +48,9 @@ const FeatureCard = ({ feature, type, idx, onDetailsOpen }) => {
 			<div className="choose-content">
 				{isStropa ? (
 					<div
-						className="choose-media"
+						className={`choose-media ${
+							disableHoverReveal ? "choose-media-no-lens" : ""
+						} ${mediaFit === "contain" ? "choose-media-contain" : ""}`}
 						aria-hidden="true"
 						onMouseMove={updateCursorPosition}
 						onMouseEnter={updateCursorPosition}
@@ -44,20 +58,22 @@ const FeatureCard = ({ feature, type, idx, onDetailsOpen }) => {
 					>
 						<img
 							src={image ? image : "/images/choose/stropa-bg.jpeg"}
-							alt=""
+							alt={alt ? alt : ""}
 							loading="lazy"
 							decoding="async"
 							onError={(event) => {
 								event.currentTarget.src = "/images/choose/choose-img.webp";
 							}}
 						/>
-						<div
-							className="choose-hover-reveal"
-							aria-hidden="true"
-							style={{
-								backgroundImage: `url(${hoverImage ? hoverImage : "/images/choose/stropa-bg-hover.jpeg"})`,
-							}}
-						></div>
+						{canShowHoverReveal ? (
+							<div
+								className="choose-hover-reveal"
+								aria-hidden="true"
+								style={{
+									backgroundImage: `url(${hoverImage ? hoverImage : "/images/choose/stropa-bg-hover.jpeg"})`,
+								}}
+							></div>
+						) : null}
 					</div>
 				) : (
 					<div className="choose-icon">

@@ -212,6 +212,11 @@ START: About CSS
 		background-color: var(--tj-color-theme-dark);
 		opacity: 0.25;
 	}
+	&.video-img-static {
+		&::before {
+			display: none;
+		}
+	}
 	img {
 		width: 100%;
 		height: 100%;
@@ -253,6 +258,9 @@ START: About CSS
 	&:hover {
 		color: var(--tj-color-common-white);
 		transform: translate(-50%, -50%) scale(1.1);
+	}
+	&.video-btn-static {
+		cursor: pointer;
 	}
 }
 

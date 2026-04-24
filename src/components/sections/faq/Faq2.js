@@ -70,8 +70,8 @@ const Faq2 = ({ type = 1 }) => {
 							>
 								<div className="faq-img overflow-hidden">
 									<Image
-										src="/images/faq/faq.webp"
-										alt=""
+										src="/images/faq/strap-faq.png"
+										alt="Закрепление груза упаковочной стропой"
 										width={585}
 										height={629}
 									/>
@@ -85,8 +85,8 @@ const Faq2 = ({ type = 1 }) => {
 										<span className="call-icon">
 											<i className="tji-phone"></i>
 										</span>
-										<Link className="number" href="tel:18884521505">
-											<span>1-888-452-1505</span>
+										<Link className="number" href="tel:+74992291808">
+											<span>+7(499)229-18-08</span>
 										</Link>
 									</div>
 								</div>

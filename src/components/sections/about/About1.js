@@ -1,8 +1,6 @@
 import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
-import PopupVideo from "@/components/shared/popup-video/PopupVideo";
 import Ratings1 from "@/components/shared/ratings/Ratings1";
 import Image from "next/image";
-import Link from "next/link";
 const About1 = () => {
 	return (
 		<section className="tj-about-section section-gap">
@@ -80,23 +78,25 @@ const About1 = () => {
 									</span>
 								</div>
 							</div>
-							<div className="video-img  wow fadeInUp" data-wow-delay=".9s">
+							<div
+								className="video-img video-img-static wow fadeInUp"
+								data-wow-delay=".9s"
+							>
 								<Image
 									src="/images/about/about-2.webp"
 									alt=""
 									width={224}
 									height={234}
 								/>
-								<PopupVideo>
-									<Link
-										className="video-btn video-popup glightbox"
-										href="https://www.youtube.com/watch?v=MLpWrANjFbI&amp;ab_channel=eidelchteinadvogados"
-									>
-										<span>
-											<i className="tji-play"></i>
-										</span>
-									</Link>
-								</PopupVideo>
+								<button
+									type="button"
+									className="video-btn video-btn-static"
+									aria-label="Play"
+								>
+									<span>
+										<i className="tji-play"></i>
+									</span>
+								</button>
 							</div>
 						</div>
 					</div>
